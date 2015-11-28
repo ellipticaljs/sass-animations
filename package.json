@@ -1,12 +1,12 @@
 {
   "name": "sass-animations",
   "description": "Sass Animations",
-  "version": "0.9.5",
+  "version": "1.0.0",
   "author": "S. Francis",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tachyon1337/sass-animations.git"
+    "url": "https://github.com/ellipticaljs/sass-animations.git"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
