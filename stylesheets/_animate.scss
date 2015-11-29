@@ -926,12 +926,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateIn;
   @include keyframes($name) {
     0% {
-      @include transform-origin(center, center);
+      @include transform-origin((center, center));
       @include rotate(-200deg);
       opacity: 0;
     }
     100% {
-      @include transform-origin(center, center);
+      @include transform-origin((center, center));
       @include rotate(0);
       opacity: 1;
     }
@@ -943,12 +943,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateInUpLeft;
   @include keyframes($name) {
     0% {
-      @include transform-origin(left, bottom);
+      @include transform-origin((left, bottom));
       @include rotate(90deg);
       opacity: 0;
     }
     100% {
-      @include transform-origin(left, bottom);
+      @include transform-origin((left, bottom));
       @include rotate(0);
       opacity: 1;
     }
@@ -960,12 +960,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateInDownLeft;
   @include keyframes($name) {
     0% {
-      @include transform-origin(left, bottom);
+      @include transform-origin((left, bottom));
       @include rotate(-90deg);
       opacity: 0;
     }
     100% {
-      @include transform-origin(left, bottom);
+      @include transform-origin((left, bottom));
       @include rotate(0);
       opacity: 1;
     }
@@ -977,12 +977,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateInUpRight;
   @include keyframes($name) {
     0% {
-      @include transform-origin(right, bottom);
+      @include transform-origin((right, bottom));
       @include rotate(-90deg);
       opacity: 0;
     }
     100% {
-      @include transform-origin(right, bottom);
+      @include transform-origin((right, bottom));
       @include rotate(0);
       opacity: 1;
     }
@@ -994,12 +994,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateInDownRight;
   @include keyframes($name) {
     0% {
-      @include transform-origin(right, bottom);
+      @include transform-origin((right, bottom));
       @include rotate(90deg);
       opacity: 0;
     }
     100% {
-      @include transform-origin(right, bottom);
+      @include transform-origin((right, bottom));
       @include rotate(0);
       opacity: 1;
     }
@@ -1011,12 +1011,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateOut;
   @include keyframes($name) {
     0% {
-      @include transform-origin(center, center);
+      @include transform-origin((center, center));
       @include rotate(0);
       opacity: 1;
     }
     100% {
-      @include transform-origin(center, center);
+      @include transform-origin((center, center));
       @include rotate(200deg);
       opacity: 0;
     }
@@ -1028,12 +1028,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateOutUpLeft;
   @include keyframes($name) {
     0% {
-      @include transform-origin(left, bottom);
+      @include transform-origin((left, bottom));
       @include rotate(0);
       opacity: 1;
     }
     100% {
-      @include transform-origin(left, bottom);
+      @include transform-origin((left, bottom));
       @include rotate(-90deg);
       opacity: 0;
     }
@@ -1045,12 +1045,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateOutDownLeft;
   @include keyframes($name) {
     0% {
-      @include transform-origin(left, bottom);
+      @include transform-origin((left, bottom));
       @include rotate(0);
       opacity: 1;
     }
     100% {
-      @include transform-origin(left, bottom);
+      @include transform-origin((left, bottom));
       @include rotate(90deg);
       opacity: 0;
     }
@@ -1062,12 +1062,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateOutUpRight;
   @include keyframes($name) {
     0% {
-      @include transform-origin(right, bottom);
+      @include transform-origin((right, bottom));
       @include rotate(0);
       opacity: 1;
     }
     100% {
-      @include transform-origin(right, bottom);
+      @include transform-origin((right, bottom));
       @include rotate(90deg);
       opacity: 0;
     }
@@ -1079,12 +1079,12 @@ $_fbd:$animation-fade-big-distance;
   $name: rotateOutDownRight;
   @include keyframes($name) {
     0% {
-      @include transform-origin(right, bottom);
+      @include transform-origin((right, bottom));
       @include rotate(0);
       opacity: 1;
     }
     100% {
-      @include transform-origin(right, bottom);
+      @include transform-origin((right, bottom));
       @include rotate(-90deg);
       opacity: 0;
     }
@@ -1322,7 +1322,7 @@ $_fbd:$animation-fade-big-distance;
   $name: swing;
   @include keyframes($name) {
     20%, 40%, 60%, 80%, 100% {
-      @include transform-origin(top, center);
+      @include transform-origin((top, center));
     }
     20% {
       @include rotate(15deg);
@@ -1478,24 +1478,24 @@ $_fbd:$animation-fade-big-distance;
   @include keyframes($name) {
     0% {
       @include transform(rotate(0));
-      @include transform-origin(top, left);
+      @include transform-origin((top, left));
       @include animation-timing-function(ease-in-out);
     }
     20%,60% {
       @include transform(rotate(80deg));
-      @include transform-origin(top, left);
+      @include transform-origin((top, left));
       @include animation-timing-function(ease-in-out);
     }
     40% {
       @include transform(rotate(60deg));
-      @include transform-origin(top, left);
+      @include transform-origin((top, left));
       @include animation-timing-function(ease-in-out);
     }
     80% {
       @include transform(rotate(60deg));
       @include translateY(0);
       opacity:1;
-      @include transform-origin(top, left);
+      @include transform-origin((top, left));
       @include animation-timing-function(ease-in-out);
     }
     100% {
