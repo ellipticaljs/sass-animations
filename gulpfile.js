@@ -1,7 +1,7 @@
 
 var gulp=require('gulp');
 var sassdoc = require('sassdoc');
-sass = require('gulp-sass');
+var sass = require('gulp-sass');
 
 
 ///tasks
